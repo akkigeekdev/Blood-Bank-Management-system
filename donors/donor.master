@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="donor.master.cs" Inherits="donors_donor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+</head>
+<body>
+
+ <header>
+        <h2>Blood Bank Management System</h2>
+
+        <a href="../login.aspx" class="logoutbtn"> Logout </a>
+    </header>
+
+    <br><br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col col-md-3">
+                <!-- <a href="donorslist.aspx" class="navs">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    Donors list
+                </a> -->
+                <a href="request.aspx" class="navs">
+                    <span class="glyphicon glyphicon-tint"></span>
+                    Send blood Requests
+                </a>
+                <a href="acceptedrequest.aspx" class="navs">
+                    <span class="glyphicon glyphicon-ok"></span>
+                    Accepted Requests
+                </a>
+                <a href="rejectedrequest.aspx" class="navs">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    Rejected Requests
+                </a>
+                <a href="updateinfo.aspx" class="navs">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Update Info
+                </a>
+                <a href="changepassword.aspx" class="navs">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    Change Password
+                </a>
+            </div>
+            <div class="col col-md-9">
+                <asp:ContentPlaceHolder id="post" runat="server">
+        
+                </asp:ContentPlaceHolder>
+                
+            </div>
+        </div>
+
+    </div>
+   
+  
+</body>
+</html>

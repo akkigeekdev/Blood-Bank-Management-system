@@ -1,0 +1,41 @@
+header{
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    position: relative;
+}
+.btn.btn-danger{background-color: #e74c3c}
+.logoutbtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 83px;
+    line-height: 83px;
+    color: white; 
+    padding: 0 50px;
+    font-size: large;
+    background-color: #c0392b;
+}
+.navs:active  
+{
+    background-color: #e74c3c;
+    color: white;
+} 
+.navs{
+    display: block;
+    padding: 15px 0;
+    padding-left: 10px;
+    color: black;
+    border-right: 1px solid #cacaca;
+}
+.navs:hover{
+    background-color: #eaeaea;
+    text-decoration: none;
+}
+.navs.active{
+    background-color: #e74c3c;
+    color: white;
+}
+.glyphicon{margin-right: 10px;}
+.table > tbody > tr > td{border:none;}
+
